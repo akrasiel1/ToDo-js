@@ -27,3 +27,9 @@ addForm.addEventListener('submit', e => {
         alert(`Don't forget to add your task`); // alert user that field must be filled
     };   
 });
+// delete individual task through delegation
+ul.addEventListener('click', e => {
+    if (e.target.classList.contains('delete')) {
+        e.target.parentElement.remove();
+    };
+});
